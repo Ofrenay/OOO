@@ -1,30 +1,59 @@
 package domain;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Shop {
-    private ArrayList<Product> products = new ArrayList<>();
+    
+    private String naam;
+    private List<Product> products;
 
-    public Shop(ArrayList products){
-        this.products = products;
+    public Shop(String naam){
+        products = new ArrayList<>();
+        this.naam = naam;
     }
 
-    public void addProduct(Product p){
-        products.add(p);
+    public void addProduct(String title, String type){
+        String id = String.valueOf(products.size() + 1);
+        Product product = null;
+        
+        if(type.equalsIgnoreCase("Movie"))
+            product = new Movie(id, title, type);
+
+        else
+            product = new Game(id, title, type);
+
+        products.add(product);
     }
 
-    public Product getProduct(String title){
+    public Product getProduct(String id){
         Product result = null;
         for(Product p : products){
-            if(p.getTitle().equalsIgnoreCase(title));
-                return p;
+            if(p.getTitle().equalsIgnoreCase(id)) {
+                result = p;
+                break;
+            }
         }
+        if(result == null)
+            throw new IllegalArgumentException("Product niet geveonden ");
+
         return result;
     }
 
     public List<Product> getProducts(){
-        return products;
+        List<Product> result = new ArrayList<>();
+
+        for(Product p : products){
+            if(p.getType().equalsIgnoreCase("Movie"))
+                result.add(p);
+        }
+
+        for(Product p : products){
+            if(p.getType().equalsIgnoreCase("Games"))
+                result.add(p);
+        }
+
+        return result;
     }
 
     public double getPrice(String id, int days){
@@ -45,6 +74,6 @@ public class Shop {
     }
 
     public void close(){
-        //TODO
+        products.clear();
     }
 }

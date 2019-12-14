@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ShopApp",
+            "request": "launch",
+            "mainClass": "ui.ShopApp"
+        }
+    ]
+}

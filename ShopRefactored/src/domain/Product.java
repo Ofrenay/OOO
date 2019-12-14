@@ -3,10 +3,12 @@ package domain;
 public class Product {
     private String id;
     private String title;
+    private String type;
 
-    public Product(String id, String title){
+    public Product(String id, String title, String type){
         this.id = id;
         this.title = title;
+        this.type = type;
     }
 
     public String getId() {
@@ -28,7 +30,7 @@ public class Product {
     public double getPrice(int days){
         double price = 0;
 
-        if(id.equalsIgnoreCase("M")) {
+        if(type.equalsIgnoreCase("Movie")) {
             price = 5;
             int daysLeft = days - 3;
 
@@ -36,9 +38,13 @@ public class Product {
                 price += daysLeft * 2;
         }
 
-        else if( id.equalsIgnoreCase("G"));
+        else if( type.equalsIgnoreCase("Game"));
             price = days * 3;
 
         return price;
+    }
+
+    public String getType() {
+        return type;
     }
 }
