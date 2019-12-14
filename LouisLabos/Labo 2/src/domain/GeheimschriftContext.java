@@ -1,7 +1,7 @@
 package domain;
 
 public class GeheimschriftContext {
-    GeheimschriftStrategy geheimschriftStrategy;
+    GeheimschriftStrategy geheimspchriftStrategy;
 
     public GeheimschriftContext(){}
 
