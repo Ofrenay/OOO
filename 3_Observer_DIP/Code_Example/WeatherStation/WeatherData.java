@@ -11,7 +11,8 @@ public class WeatherData implements Subject {
 	public WeatherData() {
 		observers = new ArrayList();
 	}
-	
+
+	//register, remove and notifyObserver gimplementeerd met Subject interface
 	public void registerObserver(Observer o) {
 		observers.add(o);
 	}

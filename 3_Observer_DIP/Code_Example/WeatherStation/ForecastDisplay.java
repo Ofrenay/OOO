@@ -7,11 +7,13 @@ public class ForecastDisplay implements Observer, DisplayElement {
 	private float lastPressure;
 	private WeatherData weatherData;
 
+	//constructor en registratie observer
 	public ForecastDisplay(WeatherData weatherData) {
 		this.weatherData = weatherData;
 		weatherData.registerObserver(this);
 	}
 
+	//geimplementeerd met Observer interface
 	public void update(float temp, float humidity, float pressure) {
                 lastPressure = currentPressure;
 		currentPressure = pressure;
@@ -19,6 +21,7 @@ public class ForecastDisplay implements Observer, DisplayElement {
 		display();
 	}
 
+	//geimplementeerd met DisplayElement display
 	public void display() {
 		System.out.print("Forecast: ");
 		if (currentPressure > lastPressure) {

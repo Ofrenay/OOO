@@ -9,11 +9,13 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 	private int numReadings;
 	private WeatherData weatherData;
 
+	//contructor en registratie van observer
 	public StatisticsDisplay(WeatherData weatherData) {
 		this.weatherData = weatherData;
 		weatherData.registerObserver(this);
 	}
 
+	//geimplementeerd met Observer interface
 	public void update(float temp, float humidity, float pressure) {
 		tempSum += temp;
 		numReadings++;
@@ -29,6 +31,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 		display();
 	}
 
+	//geimplenteerd met DysplayElement
 	public void display() {
 		System.out.println("Avg/Max/Min temperature = " + (tempSum / numReadings)
 			+ "/" + maxTemp + "/" + minTemp);
