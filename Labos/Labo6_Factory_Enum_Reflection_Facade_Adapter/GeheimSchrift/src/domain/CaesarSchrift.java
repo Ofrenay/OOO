@@ -9,7 +9,7 @@ public class CaesarSchrift implements GeheimschriftStrategy{
         for(int x = 0; x < len; x++){
             char c = (char)(string.charAt(x) - 3);
             if (c > 'z')
-                s += (char)(string.charAt(x) + (26+3));
+                s += (char)(string.charAt(x) + (26-3));
             else
                 s += (char)(string.charAt(x) - 3);
         }
@@ -26,7 +26,7 @@ public class CaesarSchrift implements GeheimschriftStrategy{
             char c = (char) (string.charAt(i) + 3);
 
             if(c > 'a')
-                s += (char) (string.charAt(i) - (26+3));
+                s += (char) (string.charAt(i) + (26+3));
                 //als de waarde van het getal plus 3 hoger is dan 'z' terug beginnen
 
             else

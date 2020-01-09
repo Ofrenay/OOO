@@ -1,4 +1,3 @@
-
 //
 // Source code recreated from a .class file by IntelliJ IDEA
 // (powered by Fernflower decompiler)
@@ -11,7 +10,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class RandomCypher implements GeheimschriftStrategy{
+public class RandomCypher implements randomCypherInterface {
     private Map<Character, Character> codes = new HashMap();
 
     public RandomCypher() {
@@ -43,10 +42,10 @@ public class RandomCypher implements GeheimschriftStrategy{
         this.codes.put('z', 'j');
     }
 
-    public char[] cypher(char[] message) {
-        char[] result = new char[message.length];
+    public char[] encypher(char[] message) {
+        char[] result = new char[message.length+1];
 
-        for(int i = 0; i < message.length; ++i) {
+        for(int i = 0; i < message.length-1; ++i) {
             result[i] = (Character)this.codes.get(message[i]);
         }
 
@@ -74,19 +73,5 @@ public class RandomCypher implements GeheimschriftStrategy{
         }
 
         return cypher;
-    }
-
-    @Override
-    public String code(String s) {
-        char[] toCode = s.toCharArray();
-        char[] coded = cypher(toCode);
-        return coded.toString();
-    }
-
-    @Override
-    public String decode(String s) {
-        char[] toDecode = s.toCharArray();
-        char[] decoded = decypher(toDecode);
-        return decoded.toString();
     }
 }

@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab4a329b-8ada-40ad-88cb-a36a8097d388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GeheimSchrift/src/domain/RandomCypher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Voorbeeld_Strategy_factory_enum_refelection/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Voorbeeld_Strategy_factory_enum_refelection/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Labo2_Strategy/GeheimSchrift/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Labo2_Strategy/GeheimSchrift/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Labo2_Strategy/GeheimSchrift/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Labo2_Strategy/GeheimSchrift/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeheimSchrift/src/domain/RandomCypherAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeheimSchrift/src/domain/RandomCypherTestDrive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeheimSchrift/src/domain/randomCypherInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeheimSchrift/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GeheimSchrift/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeheimSchrift/domain/RandomCypher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeheimSchrift/out/production/Labo2/ui/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeheimSchrift/out/production/Labo6_Factory_Enum_Reflection_Facade_Adapter/domain/CaesarSchrift.class" beforeDir="false" afterPath="$PROJECT_DIR$/GeheimSchrift/out/production/Labo6_Factory_Enum_Reflection_Facade_Adapter/domain/CaesarSchrift.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeheimSchrift/out/production/Labo6_Factory_Enum_Reflection_Facade_Adapter/domain/RandomCypher.class" beforeDir="false" afterPath="$PROJECT_DIR$/GeheimSchrift/out/production/Labo6_Factory_Enum_Reflection_Facade_Adapter/domain/RandomCypher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeheimSchrift/out/production/Labo6_Factory_Enum_Reflection_Facade_Adapter/ui/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/GeheimSchrift/out/production/Labo6_Factory_Enum_Reflection_Facade_Adapter/ui/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeheimSchrift/src/domain/CaesarSchrift.java" beforeDir="false" afterPath="$PROJECT_DIR$/GeheimSchrift/src/domain/CaesarSchrift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeheimSchrift/src/domain/RandomCypher.java" beforeDir="false" afterPath="$PROJECT_DIR$/GeheimSchrift/src/domain/RandomCypher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeheimSchrift/src/ui/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/GeheimSchrift/src/ui/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LouisLabos/Labo6/src/domain/GeheimschriftFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LouisLabos/Labo6/src/domain/GeheimschriftFactory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,65 +29,57 @@
     <session id="537428927">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="14" />
+          <entry key="java" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="11" />
-          <entry key="java" value="724" />
+          <entry key="java" value="1152" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="11" />
-          <entry key="JAVA" value="724" />
+          <entry key="JAVA" value="1152" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/CaesarSchrift.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/Spiegelschrift.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="19" selection-start-line="19" selection-end-line="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/RandomCypher.java">
+            <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/ui/App.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="829">
-                  <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+                <state relative-caret-position="144">
+                  <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftFactory.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="84">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
                 </state>
               </provider>
             </entry>
@@ -84,43 +87,17 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="vertical" split-proportion="0.39735773">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftStrategy.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="108">
-                      <caret line="6" selection-start-line="6" selection-end-line="6" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftContext.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="180">
-                      <caret line="10" selection-start-line="10" selection-end-line="10" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/ui/App.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="414">
-                      <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftEnum.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="36">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-second>
     </splitter>
   </component>
@@ -138,8 +115,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/GeheimSchrift/src/domain/CaesarSchrift.java" />
-        <option value="$PROJECT_DIR$/GeheimSchrift/src/ui/App.java" />
         <option value="$PROJECT_DIR$/GeheimSchrift/src/domain/RandomCypher.java" />
+        <option value="$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftEnum.java" />
+        <option value="$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftFactory.java" />
+        <option value="$PROJECT_DIR$/GeheimSchrift/src/ui/App.java" />
       </list>
     </option>
   </component>
@@ -149,9 +128,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1680" />
+    <option name="width" value="840" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -162,8 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,12 +157,6 @@
               <item name="Labo6_Factory_Enum_Reflection_Facade_Adapter" type="b2602c69:ProjectViewProjectNode" />
               <item name="Labo6_Factory_Enum_Reflection_Facade_Adapter" type="462c0819:PsiDirectoryNode" />
               <item name="GeheimSchrift" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Labo6_Factory_Enum_Reflection_Facade_Adapter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Labo6_Factory_Enum_Reflection_Facade_Adapter" type="462c0819:PsiDirectoryNode" />
-              <item name="GeheimSchrift" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -194,18 +165,27 @@
               <item name="GeheimSchrift" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Labo6_Factory_Enum_Reflection_Facade_Adapter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Labo6_Factory_Enum_Reflection_Facade_Adapter" type="462c0819:PsiDirectoryNode" />
+              <item name="GeheimSchrift" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578564839782" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578601409692" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -259,17 +239,20 @@
       <workItem from="1578517236103" duration="224000" />
       <workItem from="1578517645212" duration="1253000" />
       <workItem from="1578563604898" duration="1207000" />
+      <workItem from="1578585934940" duration="323000" />
+      <workItem from="1578586291248" duration="235000" />
+      <workItem from="1578599885683" duration="1515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2684000" />
+    <option name="totallyTimeSpent" value="4757000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="840" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25579977" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -287,7 +270,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3292683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -306,52 +289,54 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GeheimSchrift/domain/RandomCypher.class">
+    <entry file="file://$PROJECT_DIR$/GeheimSchrift/domain/RandomCypher.class" />
+    <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/RandomCypher.java" />
+    <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/CaesarSchrift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="856">
-          <caret line="76" column="1" lean-forward="true" selection-end-line="76" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/Spiegelschrift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/CaesarSchrift.java">
+    <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        <state relative-caret-position="36">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/GeheimschriftFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/ui/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeheimSchrift/src/domain/RandomCypher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+        <state relative-caret-position="144">
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
         </state>
       </provider>
     </entry>
